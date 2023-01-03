@@ -8,8 +8,6 @@ const GenreSchema = new Schema({
         required: true,
         minLength: 3,
         maxLength: 100,
-        // enum: his allows us to set the allowed values of a string.
-        enum: [ "Fiction", "Romance", "Military history", "Action", "Humor", "Suspense", "Horror"],
     }
 });
 
