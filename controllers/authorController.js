@@ -1,4 +1,8 @@
-const Author = require("../models/author");
+// Per-command in Express ,
+// callback functions pass an error value as 
+// the first parameter (or null on success) and the
+// function results (if any) as the second parameter.
+// const Author = require("../models/author");
 
 // Display list of all Authors
 exports.author_list = (req, res) => {
@@ -11,22 +15,22 @@ exports.author_detail = (req, res) => {
 };
 
 // Display Author create form on GET
-exports.author_create_get = (res, res) => {
+exports.author_create_get = (req, res) => {
     res.send("NOT IMPLEMENTED: Author create GET");
 };
 
 // Handle Author create on POST
-exports.author_create_post = (res, res) => {
+exports.author_create_post = (req, res) => {
     res.send("NOT IMPLEMENTED: Author create POST");
 };
 
 // Display Author delete form on GET.
-exports.author_delete_get = (res, res) => {
+exports.author_delete_get = (req, res) => {
     res.send("NOT IMPLEMENTED: Author delete GET");
 };
 
 // Handle Author delete on POST.
-exports.author_delete_post = (res, res) => {
+exports.author_delete_post = (req, res) => {
     res.send("NOT IMPLEMENTED: Author delete POST");
 };
 
